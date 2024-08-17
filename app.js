@@ -13,6 +13,7 @@ const postRoutes = require('./routes/posts');
 // Use routes
 app.use(postRoutes);
 
+
 const port = 9000;
 const host = 'http://127.0.0.1:' + port;
 
