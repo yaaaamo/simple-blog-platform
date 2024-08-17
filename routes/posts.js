@@ -5,11 +5,11 @@ const Post = require('../models/Post');
 const connect = require('../config/db');
 
 
-
 // Serve the form for creating a new post
 router.get('/', (req, res) => {
     res.render('new');  // Render the 'new.ejs' template
 });
+
 
 // Handle form submission to create a new post
 router.post('/posts/new', async (req, res) => {
