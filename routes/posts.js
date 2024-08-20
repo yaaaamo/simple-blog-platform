@@ -29,6 +29,28 @@ router.post('/delete/:id', async (req, res) => {
     res.redirect('/posts'); // Redirect back to the posts listing page after deletion
 });
 
+//modify a post
+// Serve the form for editing a post
+router.get('/edit_p/:id', async (req, res) => {
+    const postId = req.params.id;
+    const coll = await connect();
+    const post = await coll.findOne({ postId: postId });
+    if (!post) {
+        res.send('Post not found');
+        return;
+    }
+    res.render('edit_post', { post });
+});
+
+// Handle form submission to update a post
+router.post('/edit_postt/:id', async (req, res) => {
+    const postId = req.params.id;
+    const { title, content, author } = req.body;
+    const coll = await connect();
+    await coll.updateOne({ postId: postId }, { $set: { title, content, author } });
+    res.redirect('/posts');
+});
+
 
 
 
