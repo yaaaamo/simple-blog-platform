@@ -41,6 +41,10 @@ small {
     
 }
 
+.button-container {
+    display: flex; /* Align children horizontally */
+    gap: 10px; /* Space between buttons */
+}
 
 button {
     background-color: #00a2ff;
