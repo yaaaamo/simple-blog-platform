@@ -23,7 +23,7 @@ router.post('/posts/new', async (req, res) => {
 // View all posts
 router.get('/posts', async (req, res) => {
     const coll = await connect();
-    const posts = await coll.find().toArray();
+    const posts = await coll.find().sort({ createdAt: -1 }).toArray(); // Sort by createdAt (newest to oldest)
     res.render('index', { posts });
 });
 
