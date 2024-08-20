@@ -38,8 +38,13 @@ p {
 
 small {
     color: #777;
+    
 }
 
+.button-container {
+    display: flex; /* Align children horizontally */
+    gap: 10px; /* Space between buttons */
+}
 
 button {
     background-color: #00a2ff;
@@ -50,6 +55,7 @@ button {
     cursor: pointer;
     font-size: 16px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 button:hover {

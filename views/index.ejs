@@ -11,6 +11,14 @@
                 <h2><%= post.title %></h2>
                 <p><%= post.content %></p>
                 <small><%= post.author %> - <%= post.createdAt.toDateString() %></small>
+                <div class="button-container">
+                    <form action="/delete/<%= post.postId %>" method="POST">
+                        <button type="submit">Delete</button>
+                    </form>
+                    <form action="/edit_p/<%= post.postId %>" method="GET">
+                        <button type="submit" >Update</button>
+                    </form>
+                </div>
             </li>
         <% }) %>
     </ul>
