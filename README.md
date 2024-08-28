@@ -56,4 +56,4 @@ This is a simple blog platform built with Node.js, Express.js, and MongoDB. It a
 - │       └── styles.css     # Stylesheet for the project
 - └── package.json           # Project metadata and dependencies
 
-![Alt text](/Users/yagmuraydemir/Desktop/blog-platform/photos/blog.png)
+![Alt text](/Users/yagmuraydemir/Desktop/blog-platform/photos/blog)
