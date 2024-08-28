@@ -38,22 +38,22 @@ This is a simple blog platform built with Node.js, Express.js, and MongoDB. It a
 
 ## File Structure
 
-blog-platform/
-│
-├── app.js                 # Main application file
-├── config/
-│   └── db.js              # MongoDB connection setup
-├── models/
-│   └── Post.js            # Post model
-├── routes/
-│   └── posts.js           # Routes for handling post-related requests
-├── views/
-│   ├── index.ejs          # Template for viewing all posts
-│   ├── new.ejs            # Template for creating a new post
-│   └── edit.ejs           # Template for editing a post
-├── public/
-│   └── css/
-│       └── styles.css     # Stylesheet for the project
-└── package.json           # Project metadata and dependencies
+- blog-platform/
+- │
+- ├── app.js                 # Main application file
+- ├── config/
+- │   └── db.js              # MongoDB connection setup
+- ├── models/
+- │   └── Post.js            # Post model
+- ├── routes/
+- │   └── posts.js           # Routes for handling post-related requests
+- ├── views/
+- │   ├── index.ejs          # Template for viewing all posts
+- │   ├── new.ejs            # Template for creating a new post
+- │   └── edit.ejs           # Template for editing a post
+- ├── public/
+- │   └── css/
+- │       └── styles.css     # Stylesheet for the project
+- └── package.json           # Project metadata and dependencies
 
 
